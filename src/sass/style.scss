@@ -1,0 +1,231 @@
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $very-dark-blue;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  gap: 25px;
+  font-family: $rubik-family;
+
+  &__left {
+    background-color: $dark-blue;
+    border-radius: 10px;
+    width: 25%;
+
+    .user {
+      background-color: $blue;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 30px;
+      border-radius: 10px;
+
+      &__img {
+        width: 100px;
+        border-radius: 50%;
+        border: solid white 1px;
+        margin-bottom: 30px;
+      }
+
+      &__para {
+        color: $pale-blue;
+        opacity: 0.5;
+        font-size: 12px;
+      }
+
+      &__name {
+        color: $pale-blue;
+        font-weight: 300;
+      }
+    }
+
+    div:last-child {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 30px;
+    }
+
+    .time {
+      width: fit-content;
+      color: $desaturated-blue;
+      cursor: pointer;
+    }
+
+    .time:hover {
+      color: $pale-blue;
+    }
+
+    .active {
+      color: white;
+    }
+  }
+
+  .container__right {
+    width: 68%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 25px;
+
+    .card {
+      border-radius: 10px;
+
+      &__header {
+        height: 20%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      &__img {
+        position: absolute;
+        top: -10px;
+        right: 20px;
+      }
+
+      &__body {
+        background-color: $dark-blue;
+        border-radius: 10px;
+        color: white;
+        padding: 30px;
+        height: 81%;
+        cursor: pointer;
+        transition: 0.5s;
+
+        & div:first-child {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        & div:last-child {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .current-hours {
+          font-size: $current-hours-font-size;
+          font-weight: 300;
+          margin: 20px 0;
+        }
+
+        .previous-hours {
+          color: $pale-blue;
+          font-size: $previous-hours-font-size;
+          opacity: 0.7;
+          font-weight: 300;
+        }
+      }
+
+      &__body:hover {
+        background-color: hsl(235, 40%, 29%);
+      }
+
+      &__title {
+        font-size: $card-title-font-size;
+      }
+    }
+
+    .card--work {
+      background-color: $work-color;
+    }
+    .card--play {
+      background-color: $play-color;
+    }
+    .card--study {
+      background-color: $study-color;
+    }
+    .card--exercise {
+      background-color: $exercise-color;
+    }
+    .card--social {
+      background-color: $social-color;
+    }
+    .card--self-care {
+      background-color: $self-care-color;
+    }
+  }
+}
+
+// Media
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 50px 10px;
+  }
+
+  .container {
+    flex-direction: column;
+
+    &__left {
+      width: 100%;
+
+      .user {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 60px 0;
+
+        &__img {
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    .container__right {
+      width: 100%;
+      grid-template-columns: 46% 46%;
+      gap: 8%;
+
+      .card__body {
+        padding: 10px;
+
+        div:last-child {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .previous-hours {
+          width: 38%;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    .container__left {
+      .user {
+        padding: 20px 0;
+      }
+
+      div:last-child {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+    .container__right {
+      grid-template-columns: 100%;
+      gap: 3%;
+    }
+  }
+}

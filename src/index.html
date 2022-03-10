@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Time tracking dashboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="container__left">
+        <div class="user">
+          <img src="./images/image-jeremy.png" alt="user" class="user__img" />
+          <span>
+            <p class="user__para">Report for</p>
+            <h1 class="user__name">Jeremy</h1>
+            <h1 class="user__name">Robson</h1>
+          </span>
+        </div>
+        <div>
+          <p class="time time--daily">Daily</p>
+          <p class="time time--weekly">Weekly</p>
+          <p class="time time--monthly">Monthly</p>
+        </div>
+      </div>
+      <div class="container__right">
+        <div class="card card--work">
+          <div class="card__header">
+            <img src="./images/icon-work.svg" alt="work" class="card__img" />
+          </div>
+          <div class="card__body">
+            <div>
+              <p class="card__title"></p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="dots"
+                class="card__dots"
+              />
+            </div>
+            <div>
+              <p class="current-hours"></p>
+              <p class="previous-hours"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--play">
+          <div class="card__header">
+            <img src="./images/icon-play.svg" alt="play" class="card__img" />
+          </div>
+          <div class="card__body">
+            <div>
+              <p class="card__title"></p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="dots"
+                class="card__dots"
+              />
+            </div>
+            <div>
+              <p class="current-hours"></p>
+              <p class="previous-hours"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--study">
+          <div class="card__header">
+            <img src="./images/icon-study.svg" alt="study" class="card__img" />
+          </div>
+          <div class="card__body">
+            <div>
+              <p class="card__title"></p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="dots"
+                class="card__dots"
+              />
+            </div>
+            <div>
+              <p class="current-hours"></p>
+              <p class="previous-hours"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--exercise">
+          <div class="card__header">
+            <img
+              src="./images/icon-exercise.svg"
+              alt="exercise"
+              class="card__img"
+            />
+          </div>
+          <div class="card__body">
+            <div>
+              <p class="card__title"></p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="dots"
+                class="card__dots"
+              />
+            </div>
+            <div>
+              <p class="current-hours"></p>
+              <p class="previous-hours"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--social">
+          <div class="card__header">
+            <img
+              src="./images/icon-social.svg"
+              alt="social"
+              class="card__img"
+            />
+          </div>
+          <div class="card__body">
+            <div>
+              <p class="card__title"></p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="dots"
+                class="card__dots"
+              />
+            </div>
+            <div>
+              <p class="current-hours"></p>
+              <p class="previous-hours"></p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--self-care">
+          <div class="card__header">
+            <img
+              src="./images/icon-self-care.svg"
+              alt="self care"
+              class="card__img"
+            />
+          </div>
+          <div class="card__body">
+            <div>
+              <p class="card__title"></p>
+              <img
+                src="./images/icon-ellipsis.svg"
+                alt="dots"
+                class="card__dots"
+              />
+            </div>
+            <div>
+              <p class="current-hours"></p>
+              <p class="previous-hours"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
