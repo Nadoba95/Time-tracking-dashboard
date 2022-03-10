@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://tip-calculator-app-nadoba95.netlify.app/](https://tip-calculator-app-nadoba95.netlify.app/)
+- Live Site URL: [https://time-tracking-dashboard-nadoba95.netlify.app/](https://time-tracking-dashboard-nadoba95.netlify.app/)
 
 ### Built with
 
