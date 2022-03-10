@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Link](https://your-live-site-url.com)
+- Live Site URL: [https://tip-calculator-app-nadoba95.netlify.app/](https://tip-calculator-app-nadoba95.netlify.app/)
 
 ### Built with
 
